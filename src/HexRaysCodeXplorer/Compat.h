@@ -1,4 +1,8 @@
 // compatibility functions needed for IDA 9.0 support. mostly ported from IDAPython's idc module
+#ifndef __H_COMPAT__
+#define __H_COMPAT__
+
+
 #pragma once
 #include <lines.hpp>
 #include <kernwin.hpp>
@@ -46,3 +50,5 @@ namespace Compat
 	#define SET_MEMTI_USERTI      0x0010 ///< user-specified type
 	//@}
 }
+
+#endif
